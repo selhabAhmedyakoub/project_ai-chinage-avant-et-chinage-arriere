@@ -1,0 +1,84 @@
+{% extends "index.html" %}
+
+{% block title %}
+search_by_characteristics_successful
+{% endblock %}
+
+{% block main %}
+<div class="bg-container">
+    <img id="bg" src="/static/rectorat_ub21.png" alt="background"> 
+    <form action="/bycarac2" method="post">
+        <div class="message-container">
+            <div class="bot_message">
+                <img src="/static/logo.png" alt="Logo" class="message-image">
+                <div class="message">
+            Welcome to our student search feature! Here, you can easily find a student in the university by choosing one of the searching methods:
+                </div>
+            </div>    
+            <div class="user_message">
+                <div class="message">
+                I want to search using student characteristics
+                </div>
+                <img src="/static/avatar.png" alt="Logo" class="message-image">
+            </div>  
+            <div class="bot_message">
+                <img src="/static/logo.png" alt="Logo" class="message-image">
+                <div class="message ">
+                OK, give me his or her characteristics?
+                </div>
+            </div>  
+            <div class="user_message">
+                <div class="message">
+                    {% if name %}
+                        Departement = {{ department }}|
+                        Major = {{ major }}|
+                        Group = {{ group_id }}|
+                        Number = {{ number }}
+                    {% else %}
+                        {% if names and department and major and group_id %}
+                            Departement = {{ department }}|
+                            Major = {{ major }}|
+                            Group = {{ group_id }}
+                        {% elif names and department and major %}
+                            Departement = {{ department }}|
+                            Major = {{ major }}
+                        {% elif names and department %}
+                            Departement = {{ department }}
+                        {% endif %}
+                    {% endif %}
+                </div>
+                <img src="/static/avatar.png" alt="Logo" class="message-image">
+            </div>  
+            <div class="bot_message">
+                <img src="/static/logo.png" alt="Logo" class="message-image">
+                <div class="message_success typing-effect" id="message-content">
+                {% if name %}
+                    The student you are seeking is {{ name }}
+                {% elif names %}
+                    The students you are seeking are:
+                    <ul>
+                        {% for name in names %}
+                            <li>{{ name }}</li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    No student found.
+                {% endif %}
+                </div>
+            </div>  
+        </div>
+        <div id="empty">
+            <a href="/bycarac2"><img src="/static/empty.png" alt="send"></a>
+        </div>
+        <div class="button-container">
+            <div class="characteristics-input">
+                <input autocomplete="off" autofocus class="form-control" name="characteristics" placeholder="Student characteristics, separated by commas" type="text">
+            </div>
+            <a href="/bycarac2"><i class="fa-solid fa-arrow-right"></i></a>         
+        </div>
+        <div id="send">
+            <a href="/bycarac2"><img src="/static/arrow.png" alt="send"></a>
+        </div>
+    </form>    
+</div>
+{% endblock %}

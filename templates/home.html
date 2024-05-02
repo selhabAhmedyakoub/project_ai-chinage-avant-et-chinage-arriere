@@ -1,0 +1,24 @@
+{% extends "index.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+<div class="bg-container">
+    <img id="bg" src="/static/rectorat_ub21.png" alt="background"> 
+    <div class="message-container">
+        <div class="bot_message">
+            <img src="/static/logo.png" alt="Logo" class="message-image">
+            <div class="message typing-effect">
+                
+        Welcome to our student search feature! Here, you can easily find a student in the university by choosing one of the searching methods bellow:
+            </div>
+        </div>    
+    </div>
+    <div class="button-container">
+        <a class="updateBtn" href="/byname1">Search by student name</a>
+        <a class="updateBtn" href="/bycarac1">Search by student characteristics</a>
+    </div>
+</div>
+{% endblock %}
