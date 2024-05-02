@@ -22,4 +22,4 @@ Si vous avez d'autres questions ou avez besoin d'une assistance supplémentaire,
 
 
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=kkHRpeCHNT8)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/kkHRpeCHNT8/0.jpg)](https://www.youtube.com/watch?v=kkHRpeCHNT8)
