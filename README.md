@@ -16,3 +16,10 @@ Voici quelques exemples que vous pouvez appliquer pour chaque mécanisme :
 Veuillez noter que ces exemples illustrent l'utilisation des mécanismes de chaînage avant et arrière dans le cadre du projet. Vous pouvez les adapter et les implémenter en conséquence.
 
 Si vous avez d'autres questions ou avez besoin d'une assistance supplémentaire, n'hésitez pas à me le faire savoir.
+
+
+
+
+
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=kkHRpeCHNT8)
